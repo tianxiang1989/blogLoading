@@ -1,3 +1,3 @@
 blogLoading
 ===========
-加载时滚动的loading效果
+1.modify loading style (10:54)
