@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 尺寸常量 --> 
 <resources>
-<!-- 登陆loading图5个圆圈的大小 -->
+<!-- 登陆模块 loading图的5个圆圈的大小 -->
 <dimen name="loading_circle_size">23dp</dimen>
 
 </resources>
