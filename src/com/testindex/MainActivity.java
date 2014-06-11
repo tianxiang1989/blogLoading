@@ -30,14 +30,14 @@ public class MainActivity extends Activity {
 		for (int id : imgIDs)
 			((ImageView) findViewById(id)).setBackgroundResource(R.drawable.progress_bg_small);
 		thread.start();
-		Button btn = (Button) findViewById(R.id.button1);
-		btn.setOnClickListener(new View.OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				thread.flag = false;
-			}
-		});
+//		Button btn = (Button) findViewById(R.id.button1);
+//		btn.setOnClickListener(new View.OnClickListener() {
+//
+//			@Override
+//			public void onClick(View v) {
+//				thread.flag = false;
+//			}
+//		});
 	}
 
 	public Handler myHandler = new Handler() {
