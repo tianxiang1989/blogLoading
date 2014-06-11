@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.main);
 		final IndexThread thread = new IndexThread();
 		for (int id : imgIDs)
-			((ImageView) findViewById(id)).setBackgroundResource(R.drawable.progress_bg_small);
+			((ImageView) findViewById(id)).setBackgroundResource(R.drawable.login_loading_no);
 		thread.start();
 //		Button btn = (Button) findViewById(R.id.button1);
 //		btn.setOnClickListener(new View.OnClickListener() {
@@ -43,10 +43,10 @@ public class MainActivity extends Activity {
 			Log.i("Test", "---" + msg.arg1);
 			switch (msg.what) {
 			case EDIT_TYPE_SELECTED:
-				((ImageView) findViewById(msg.arg1)).setBackgroundResource(R.drawable.loginLoadingYes);
+				((ImageView) findViewById(msg.arg1)).setBackgroundResource(R.drawable.login_loading_yes);
 				break;
 			case EDIT_TYPE_NO_SELECTED:
-				((ImageView) findViewById(msg.arg1)).setBackgroundResource(R.drawable.progress_bg_small);
+				((ImageView) findViewById(msg.arg1)).setBackgroundResource(R.drawable.login_loading_no);
 				break;
 			}
 		}
