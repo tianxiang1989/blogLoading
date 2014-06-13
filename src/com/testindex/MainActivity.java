@@ -36,6 +36,8 @@ public class MainActivity extends Activity {
 //		});
 	}
 
+	
+	
 	/**画loading圈的Handler*/
 	public Handler myHandler = new Handler() {
 		@Override
@@ -60,7 +62,7 @@ public class MainActivity extends Activity {
 			Message msg;
 			while (flag) {
 				for (int i = 0; i < count; i++) {
-					Log.i("Test", "---" + count);
+					Log.i("Test", "i:---" + i);
 					msg = new Message();
 					msg.what = EDIT_TYPE_SELECTED;
 					msg.arg1 = imgIDs[i];
